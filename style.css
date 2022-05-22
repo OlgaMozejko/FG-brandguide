@@ -1,0 +1,322 @@
+
+:root {
+    --text-color: #050505;
+    --main-pink: #FFE3ED;
+    --dark-pink: #D09EA8;
+    --dark-detail: #564145;
+    --yellow: #FFD1BF;
+    --green: #81A9A1;
+    --white: #FCFCFC;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14pt;
+}
+
+h1 {
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30pt;
+}
+
+h2 {
+  font-family: neonoir, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24pt;
+}
+
+
+/*----loader------*/
+
+
+.loader {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.loading-icon {
+  width: 5em;
+}
+
+.loading {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: draw 2s linear alternate infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+.loaded .loader {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s 1s ease-out;
+}
+
+
+/*-------styling login-----*/
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('/images/background-dark-1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.path {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: draw 5s linear forwards;
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+.welcome {
+  width: 10em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.welcometext {
+  font-style: italic;
+  text-align: center;
+}
+
+.welcome-btn {
+  font-family: dunbar-tall, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18pt;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.welcome-btn-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.welcome-btn:hover {
+  text-decoration: none;
+}
+
+.extra {
+  font-family: neonoir, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+/*--------aside navigation------*/
+
+aside {
+  position: fixed;
+  height: 100vh;
+  left: 5%;
+  transform: translate(0%, 15%);
+  z-index: 10;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-aside {
+  height: 4.5em;
+}
+
+.side-nav-dot .indicator {
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--main-pink);
+}
+
+
+.side-nav-dot .active {
+  transform: scale(1.7);
+  background-color: var(--dark-pink);
+  transition: transform 0.4s ease-in-out;
+}
+
+.side-nav-dot .active .aside-text {
+  transform: translate(1em, 0%) rotate(0deg);
+}
+
+.side-section {
+  min-height: 100vh;
+  padding-bottom: 10em;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aside-text {
+  transform: translate(0%, -1em) rotate(-90deg);
+  color: var(--text-color);
+  font-size: 10px;
+}
+
+.indicator {
+  text-decoration: none;
+}
+
+
+
+/*--------navigation-------*/
+
+
+nav {
+  position: fixed;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  padding-right: 60px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12pt;
+  margin: 5px;
+  margin-top: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.guide {
+  position: absolute;
+  margin: 0;
+  transform:  translate(5px, 10px) rotate(-25deg);
+}
+
+.content {
+  position: absolute;
+  margin: 0;
+  transform:  translate(32px, 65px) rotate(-45deg);
+}
+
+.layout {
+  position: absolute;
+  margin: 0;
+  transform:  translate(100px, 100px) rotate(-72deg);
+}
+
+
+.active-guide {
+  transform:  translate(5px, 10px) rotate(-25deg) scale(1.5);
+}
+
+.active-content {
+  transform:  translate(32px, 65px) rotate(-45deg) scale(1.5);
+}
+
+.active-layout {
+  transform:  translate(100px, 100px) rotate(-72deg) scale(1.5);
+}
+
+.guide:hover {
+  transform:  translate(5px, 10px) rotate(-25deg) scale(1.5);
+}
+
+.content:hover {
+  transform:  translate(32px, 65px) rotate(-45deg) scale(1.5);
+}
+
+.layout:hover {
+  transform:  translate(100px, 100px) rotate(-72deg) scale(1.5);
+}
+
+.little-ball {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-color: var(--main-pink);
+  border-radius: 50%;
+  transform:  translate(120px, -10px);
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+ 
+}
+
+@media only screen and (max-width: 400px) {
+
+ 
+}

@@ -1,0 +1,376 @@
+
+:root {
+    --text-color: #050505;
+    --main-pink: #FFE3ED;
+    --dark-pink: #D09EA8;
+    --dark-detail: #564145;
+    --yellow: #FFD1BF;
+    --green: #81A9A1;
+    --white: #FCFCFC;
+}
+
+
+.content-aside {
+    height: 6em;
+}
+
+/*--------content 1--------*/
+
+.content-section-1 {
+    background-image: url(./images/background-dark-2.png);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain;
+}
+
+.content-section-1 h1 {
+font-size: 10vh;
+text-align: center;
+}
+
+.description-text {
+    margin: 0;
+    font-style: italic;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/*------content 2--------*/
+
+.content-section-2 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-section-2 p {
+    width: 40%;
+}
+
+.content-outerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.background-image {
+    width: 40em;
+    box-shadow: 2px -2px 15px 0px rgba(0, 0, 0, 0.16);
+    margin-top: 2em;
+}
+
+/*---------content 3----------*/
+
+.content-section-3 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.product-photo {
+    border: 2px solid var(--dark-detail);
+    width: 14em;
+}
+
+.product-photo2 {
+    border: 2px solid var(--green);
+    width: 14em;
+}
+
+.content-inner-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.content-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+/*------------section 4-------------*/
+
+.content-section-4 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.photo-gallery img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.8;
+    border: 2px solid var(--dark-detail);
+}
+   
+.photo-gallery img:hover {
+    opacity: 1;
+}
+   
+.photo-gallery {
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+   
+.product-box {
+    margin-top: 2em;
+}
+   
+.image-container img {
+    height: 550px;
+    transition: transform 1s;
+    border: 2px solid var(--dark-detail);
+}
+   
+.image-container img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+   
+.image-container {
+    float: right;
+    padding: 10px;
+}
+
+.arrow-up {
+    width: 20px !important;
+    height: 40px !important;
+    transform: rotate(-90deg);
+    margin: 0;
+    border: none !important;
+}
+
+.arrow-down {
+    width: 20px !important;
+    height: 40px !important;
+    transform: rotate(90deg);
+    margin: 0;
+    border: none !important;
+}
+
+/*------content 5 ------------*/
+
+.content-section-5 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.camp {
+    width: 65%;
+    margin-top: 4em;
+    border: 2px solid var(--white);
+    box-shadow: 2px -2px 15px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+/*-------layout---------*/
+
+.layout-aside {
+    height: 4.5em;
+}
+
+.layout-1 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(./images/background-light-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -3em;
+    background-position-x: -3em;
+}
+
+.layout-1 h1 {
+    font-size: 10vh;
+    text-align: center;
+    }
+
+/*-------layout main page------*/
+
+.layout-2 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.screens-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.computer {
+    margin: 20px;
+}
+
+.mobile {
+    margin: 20px;
+}
+
+.computer-frame {
+    position: absolute;
+    width: 710px;
+    transform: translate(-7.8%, -5%);
+}
+
+.mobile-frame {
+    position: absolute;
+    width: 220px;
+    transform: translate(-9.2%, -5.8%);
+}
+
+.screen {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 520px;
+    height: 325px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: var(--dark-pink);
+    justify-content: center;
+  }
+
+.pc-menu {
+    width: 505px;
+    position: absolute;
+    z-index: 11;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.m-menu {
+    width: 145px;
+    position: absolute;
+    z-index: 11;
+    margin: 10px;
+}
+
+.pc-main {
+    width: 100%;
+}
+
+.mobile-main {
+    width: 100%;
+}
+
+.screen-mobile {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 160px;
+    height: 315px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--dark-pink);
+    justify-content: center;
+  }
+
+/*------rest layout pages------*/
+
+.layout-3 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.layout-4 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.layout-5 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.layout-6 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.layout-7 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.screen-mobile-2 {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 160px;
+    height: 315px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--dark-pink);
+    justify-content: center;
+  }
+
+  .screen-2 {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 520px;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: var(--dark-pink);
+    justify-content: center;
+  }
+
+  .computer-frame-2 {
+    position: absolute;
+    width: 710px;
+    height: 440px;
+    transform: translate(-7.8%, -5%);
+}
